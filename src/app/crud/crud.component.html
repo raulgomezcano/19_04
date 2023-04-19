@@ -1,0 +1,32 @@
+ID de la Factura: <input type="number" [(ngModel)]="idFactura">
+<br>
+ID del cliente: <input type="number" [(ngModel)]="idCliente">
+<br>
+IVA: <input type="number" [(ngModel)]="iva">
+<br>
+Total de la factura: <input type="number" [(ngModel)]="totalFactura">
+<br>
+<button (click)="crearFactura()">Crear Factura</button>
+<br>
+<button (click)="actualizarFactura()">Actualizar Factura</button>
+<br>
+<button (click)="borrarFactura()">Borrar Factura</button>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>idFactura</th>
+            <th>idCliente</th>
+            <th>IVA</th>
+            <th>totalFactura</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of miServicio.listaFacturas">
+            <td>{{item.idFactura}}</td>
+            <td>{{item.idCliente}}</td>
+            <td>{{item.IVA}}</td>
+            <td>{{item.totalFactura}}</td>
+        </tr>
+    </tbody>
+</table>
