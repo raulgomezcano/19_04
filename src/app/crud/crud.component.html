@@ -6,13 +6,13 @@ IVA: <input type="number" [(ngModel)]="iva">
 <br>
 Total de la factura: <input type="number" [(ngModel)]="totalFactura">
 <br>
-<button (click)="crearFactura()">Crear Factura</button>
+<button (click)="crearFactura()" class="btn btn-success">Crear Factura</button>
 <br>
-<button (click)="actualizarFactura()">Actualizar Factura</button>
+<button (click)="actualizarFactura()" class="btn btn-primary">Actualizar Factura</button>
 <br>
-<button (click)="borrarFactura()">Borrar Factura</button>
+<button (click)="borrarFactura()" class="btn btn-danger">Borrar Factura</button>
 <br>
-<table>
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>idFactura</th>
